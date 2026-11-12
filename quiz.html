@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The New Word Lab | Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html">The New Word Lab</a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="vocabulary.html">Vocabulary</a><a class="active" aria-current="page" href="quiz.html">Quiz</a><a href="about.html">About</a></nav>
+  </div></header>
+  <main class="page-main quiz-main">
+    <div class="page-heading"><p class="eyebrow">WORD FORMATION CHALLENGE</p><h1>Check your knowledge</h1><p>Answer all five questions, then submit to see your score and the correct answers.</p></div>
+    <form id="quiz-form">
+      <fieldset class="question"><legend><span class="q-number">1</span> Which word means “a person who is both a friend and a rival”?</legend>
+        <label class="choice"><input type="radio" name="q1" value="screenfog"> Screenfog</label><label class="choice"><input type="radio" name="q1" value="frenemy"> Frenemy</label><label class="choice"><input type="radio" name="q1" value="cyberbullying"> Cyberbullying</label><p class="feedback" id="feedback-q1" aria-live="polite"></p>
+      </fieldset>
+      <fieldset class="question"><legend><span class="q-number">2</span> Complete the sentence: A hazy screen or a foggy feeling after prolonged screen use is called ______.</legend>
+        <label class="sr-only" for="q2">Type the missing word</label><input class="text-answer" id="q2" name="q2" type="text" autocomplete="off" placeholder="Type the word"><p class="feedback" id="feedback-q2" aria-live="polite"></p>
+      </fieldset>
+      <fieldset class="question"><legend><span class="q-number">3</span> What is the part of speech of <em>cyberbullying</em>?</legend>
+        <label class="choice"><input type="radio" name="q3" value="noun"> Noun</label><label class="choice"><input type="radio" name="q3" value="adjective"> Adjective</label><label class="choice"><input type="radio" name="q3" value="verb"> Verb</label><p class="feedback" id="feedback-q3" aria-live="polite"></p>
+      </fieldset>
+      <fieldset class="question"><legend><span class="q-number">4</span> Which word is formed by adding the prefix <em>cyber-</em>?</legend>
+        <label class="choice"><input type="radio" name="q4" value="blending"> Frenemy, through blending</label><label class="choice"><input type="radio" name="q4" value="compounding"> Screenfog, through compounding</label><label class="choice"><input type="radio" name="q4" value="prefixation"> Cyberbullying, through prefixation</label><p class="feedback" id="feedback-q4" aria-live="polite"></p>
+      </fieldset>
+      <fieldset class="question"><legend><span class="q-number">5</span> Spell the compound noun made from <em>screen</em> + <em>fog</em>.</legend>
+        <label class="sr-only" for="q5">Type the correct spelling</label><input class="text-answer" id="q5" name="q5" type="text" autocomplete="off" placeholder="Type the word"><p class="feedback" id="feedback-q5" aria-live="polite"></p>
+      </fieldset>
+      <div class="quiz-actions"><button class="button" type="submit">Submit answers</button><button class="button button-secondary" type="reset">Try again</button></div>
+    </form>
+    <div id="quiz-result" class="result" role="status" aria-live="polite" hidden></div>
+  </main>
+  <footer><p>The New Word Lab · A student lexicology project</p></footer>
+  <script src="quiz.js"></script>
+</body>
+</html>
